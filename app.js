@@ -8,7 +8,7 @@ let packages = [
     { heavy: true, priority: false, fragile: true, to: 'Jeremy', trackingNumber: 'suz2367', image: './package.jpg' }]
 
 let currentPackage = packages
-
+let missingPackage = null
 // console.log(`${packages[3].to} lost his package ${packages[3].trackingNumber}`)
 
 function startSearch() {
