@@ -32,9 +32,6 @@ function drawPackages() {
     document.getElementById('Package').innerHTML = template
 }
 
-
-
-
 function guessHeavy() {
     let heavyPackage = currentPackage.filter(p => p.heavy == missingPackage.heavy)
     console.log(heavyPackage);
@@ -60,9 +57,9 @@ function guessPriority() {
 }
 
 function accuse(name) {
-    let found = currentPackage.find(p => p.to == name)
-    console.log(found);
-    if (found.to == currentPackage.to) {
+    // let found = currentPackage.find(p => p.to == name)
+    // console.log(found);
+    if (missingPackage.to == name) {
         window.alert('You found it!')
     }
     else {
